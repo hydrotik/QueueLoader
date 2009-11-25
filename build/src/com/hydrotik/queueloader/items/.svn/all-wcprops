@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/53/trunk/build/src/com/hydrotik/queueloader/items
+END
+XMLItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/XMLItem.as
+END
+MPSoundItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/MPSoundItem.as
+END
+PCMSoundItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/PCMSoundItem.as
+END
+SWFItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/SWFItem.as
+END
+ZIPItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/ZIPItem.as
+END
+GenericItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/GenericItem.as
+END
+ImageItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/ImageItem.as
+END
+FLVItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/FLVItem.as
+END
+CSSItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/82/trunk/build/src/com/hydrotik/queueloader/items/CSSItem.as
+END

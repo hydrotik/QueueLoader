@@ -1,0 +1,38 @@
+8
+
+dir
+12
+https://queueloader-as3.googlecode.com/svn/trunk/build/src/com/hydrotik
+https://queueloader-as3.googlecode.com/svn
+
+
+
+2007-12-06T03:36:38.674461Z
+11
+donovan@hydrotik.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+2ba6ebb4-a93e-0410-8ae0-edfcee93b0ab
+
+go
+dir
+
+
+
+add
+
+utils
+dir
+
