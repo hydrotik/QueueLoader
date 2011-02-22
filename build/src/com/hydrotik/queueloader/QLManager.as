@@ -29,7 +29,7 @@ package com.hydrotik.queueloader {
 
 	/**
 	 * @author Donovan Adams | Hydrotik | http://blog.hydrotik.com
-	 * @version: 3.1.8
+	 * @version: 3.2.0
 	 */
 	public class QLManager {
 
@@ -73,7 +73,7 @@ package com.hydrotik.queueloader {
 		}
 
 		public static function disposeAll() : void {
-			for (var i:String in _queues) _queues[i].dispose();
+			for (var i:String in _queues) ILoadable(_queues[i]).dispose();
 		}
 	}
 }

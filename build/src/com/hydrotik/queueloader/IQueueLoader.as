@@ -31,7 +31,7 @@ package com.hydrotik.queueloader {
 	import flash.events.IOErrorEvent;
 
 	/**
-	 * @author Eric | 3.1.8
+	 * @author Eric | 3.2.0
 	 */
 	public interface IQueueLoader extends IEventDispatcher {
 
@@ -51,9 +51,9 @@ package com.hydrotik.queueloader {
 
 		function loadXML(xml : XML, scope : * = null) : void ;
 
-		function removeItemAt(index : Number) : Array;
+		function removeItemAt(index : Number) : Vector.<ILoadable>;
 
-		function sortOn(... args) : void;
+		function sort(func:Function) : void;
 
 		function shuffle(index : int, len : int, insertAt : int) : void;
 
@@ -61,9 +61,9 @@ package com.hydrotik.queueloader {
 
 		function getItemByTitle(title : String) : Object;
 
-		function getLoadedItems() : Array;
+		function getLoadedItems() : Vector.<ILoadable>;
 
-		function getQueuedItems() : Array;
+		function getQueuedItems() : Vector.<ILoadable>;
 
 		function execute() : void;
 
