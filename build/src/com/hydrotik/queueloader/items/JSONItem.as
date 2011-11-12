@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright 2007-2011 (c) Donovan Adams, http://blog.hydrotik.com/
  *
  * Permission is hereby granted, free of charge, to any person
@@ -34,15 +34,17 @@ package com.hydrotik.queueloader.items {
 	import flash.system.LoaderContext;
 	
 	import com.hydrotik.queueloader.AbstractItem;
-	import com.hydrotik.queueloader.ILoadable;	
+	import com.hydrotik.queueloader.ILoadable;
+	
+	// Or use the adobe JSON and change line 103
+	import com.serialization.json.JSON;
 
 	/**
 	 * @author Donovan Adams | Hydrotik | http://blog.hydrotik.com
-	 * @version: 3.1.8
+	 * @version: 3.2.1
 	 */
-	public class XMLItem extends AbstractItem implements ILoadable {
-
-		public function XMLItem(path : URLRequest, container : *, info : Object, loaderContext : LoaderContext, fileType:int) {
+	public class JSONItem extends AbstractItem implements ILoadable {
+		public function JSONItem(path : URLRequest, container : *, info : Object, loaderContext : LoaderContext, fileType : int) {
 			super(path, container, info, loaderContext, fileType);
 			if(info["title"] != null) _title = _info.title;
 		}
@@ -54,13 +56,12 @@ package com.hydrotik.queueloader.items {
 			_loader.addEventListener(IOErrorEvent.IO_ERROR, _errorFunction);
 			_loader.addEventListener(Event.OPEN, _openFunction);
 			_loader.addEventListener(ProgressEvent.PROGRESS, _progressFunction);
-			_target = _loader.data;
 			_loader.load(_path);
 		}
 
 		public override function stop() : void {
-			deConfigureListeners();
 			try{URLLoader(_loader).close();}catch(e:Error){};
+			deConfigureListeners();
 		}
 
 		public override function dispose() : void {
@@ -98,8 +99,10 @@ package com.hydrotik.queueloader.items {
 		
 		/******* PROTECTED ********/
 		protected override function preCompleteProcess(event:Event):void {
-			_content = new XML(event.target.data);
+			var loader:URLLoader = URLLoader(event.target);
+			_content = JSON.deserialize(loader.data);
 			_completeFunction(event);
         }
+        
 	}
 }

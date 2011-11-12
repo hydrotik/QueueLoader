@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright 2007-2009 (c) Donovan Adams, http://blog.hydrotik.com/
+ * Copyright 2007-2011 (c) Donovan Adams, http://blog.hydrotik.com/
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -38,7 +38,7 @@ package com.hydrotik.queueloader.items {
 
 	/**
 	 * @author Donovan Adams | Hydrotik | http://blog.hydrotik.com
-	 * @version: 3.2.0
+	 * @version: 3.2.1
 	 */
 	public class XMLItem extends AbstractItem implements ILoadable {
 

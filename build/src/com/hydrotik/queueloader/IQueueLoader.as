@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright 2007-2009 (c) Donovan Adams, http://blog.hydrotik.com/
+ * Copyright 2007-2011 (c) Donovan Adams, http://blog.hydrotik.com/
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -31,7 +31,7 @@ package com.hydrotik.queueloader {
 	import flash.events.IOErrorEvent;
 
 	/**
-	 * @author Eric | 3.2.0
+	 * @author Eric | 3.2.1
 	 */
 	public interface IQueueLoader extends IEventDispatcher {
 

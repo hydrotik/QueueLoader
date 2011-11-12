@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright 2007-2009 (c) Donovan Adams, http://blog.hydrotik.com/
+ * Copyright 2007-2011 (c) Donovan Adams, http://blog.hydrotik.com/
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -26,7 +26,7 @@
 package com.hydrotik.queueloader {
 
 	/**
-	 * @author Donovan/Eric | 3.2.0
+	 * @author Donovan/Eric | 3.2.1
 	 */
 	public final class QueueLoaderConst {
 
@@ -51,8 +51,10 @@ package com.hydrotik.queueloader {
 		public static const FILE_FLV : int = 8;
 
 		public static const FILE_GENERIC : int = 9;
+		
+		public static const FILE_JSON : int = 10;
 
-		public static const VERSION : String = "QueueLoader 3.2.0";
+		public static const VERSION : String = "QueueLoader 3.2.1";
 
 		public static const AUTHOR : String = "Donovan Adams - donovan[(replace at)]hydrotik.com";
 
